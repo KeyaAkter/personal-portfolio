@@ -14,7 +14,7 @@ export const useImageReveal = (el, delay = 0) => {
       },
       {
         y: 0,
-        duration: 1,
+        duration: 2,
         delay: delay,
         ease: "power4.out",
       }
@@ -35,7 +35,7 @@ export const useHeadlineReveal = (items, delay = 0) => {
       {
         y: 0,
         duration: 1,
-        delay: delay,
+        delay,
         ease: "power4.out",
         stagger: 0.2,
       }
@@ -56,7 +56,7 @@ export const useLinkReveal = (items, delay = 0) => {
       {
         opacity: 1,
         duration: 2,
-        delay: delay,
+        delay,
         ease: "power4.out",
         stagger: 0.2,
         scrollTrigger: {
@@ -65,4 +65,40 @@ export const useLinkReveal = (items, delay = 0) => {
       }
     );
   }, [items, delay]);
+};
+
+// Revealing Bio
+export const useBioReveal = (el, delay = 0) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el.current,
+      {
+        y: 500,
+      },
+      {
+        y: 0,
+        duration: 1.5,
+        delay,
+        ease: "power4.out",
+      }
+    );
+  }, [el, delay]);
+};
+
+// Revealing Socials
+export const useSocialReveal = (el, delay = 0) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el.current,
+      {
+        x: -500,
+      },
+      {
+        x: 0,
+        duration: 1.5,
+        delay,
+        ease: "power4.out",
+      }
+    );
+  }, [el, delay]);
 };
