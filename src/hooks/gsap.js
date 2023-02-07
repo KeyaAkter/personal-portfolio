@@ -102,3 +102,24 @@ export const useSocialReveal = (el, delay = 0) => {
     );
   }, [el, delay]);
 };
+
+// Revealing Section Title
+export const useSectionTitleReveal = (el, delay = 0) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el.current,
+      {
+        y: 200,
+      },
+      {
+        y: 0,
+        duration: 1.5,
+        delay,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: el.current,
+        },
+      }
+    );
+  }, [el, delay]);
+};
