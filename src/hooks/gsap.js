@@ -10,7 +10,7 @@ export const useImageReveal = (el, delay = 0) => {
     gsap.fromTo(
       el.current,
       {
-        y: 500,
+        y: "-100vh",
       },
       {
         y: 0,
@@ -30,7 +30,7 @@ export const useHeadlineReveal = (items, delay = 0) => {
     gsap.fromTo(
       el,
       {
-        y: "-100vh",
+        y: 500,
       },
       {
         y: 0,
@@ -74,9 +74,11 @@ export const useBioReveal = (el, delay = 0) => {
       el.current,
       {
         y: 500,
+        opacity: 0,
       },
       {
         y: 0,
+        opacity: 1,
         duration: 1.5,
         delay,
         ease: "power4.out",
@@ -92,9 +94,11 @@ export const useSocialReveal = (el, delay = 0) => {
       el.current,
       {
         x: -500,
+        opacity: 0,
       },
       {
         x: 0,
+        opacity: 1,
         duration: 1.5,
         delay,
         ease: "power4.out",
@@ -113,7 +117,7 @@ export const useSectionTitleReveal = (el, delay = 0) => {
       },
       {
         y: 0,
-        duration: 1.5,
+        duration: 1.2,
         delay,
         ease: "power4.out",
         scrollTrigger: {
@@ -133,10 +137,12 @@ export const useProjectReveal = (items, delay = 0) => {
       el,
       {
         y: 500,
+        opacity: 0,
       },
       {
         y: 0,
-        duration: 2,
+        opacity: 1,
+        duration: 1.5,
         delay,
         ease: "power4.out",
         stagger: 0.3,
@@ -164,8 +170,8 @@ export const useSkillLineReveal = (items) => {
   }, [items]);
 };
 
-// Skill Line Reveal
-export const useSkillTextReveal = (el) => {
+// Skill Text Reveal
+export const useSkillTextReveal = (el, delay = 0) => {
   useEffect(() => {
     gsap.fromTo(
       el,
@@ -175,6 +181,7 @@ export const useSkillTextReveal = (el) => {
       {
         y: 0,
         duration: 1,
+        delay,
         ease: "power4.out",
         stagger: 0.3,
         scrollTrigger: {
@@ -182,5 +189,52 @@ export const useSkillTextReveal = (el) => {
         },
       }
     );
-  }, [el]);
+  }, [el, delay]);
+};
+
+// Footer Reveal
+export const useFooterReveal = (el, delay = 0) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el.current,
+      {
+        y: -100,
+      },
+      {
+        y: 0,
+        duration: 1,
+        delay,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: el.current,
+        },
+      }
+    );
+  }, [el, delay]);
+};
+
+// Revealing Contact
+export const useInputReveal = (items, delay = 0) => {
+  useEffect(() => {
+    const el = items.map((item) => item.current);
+
+    gsap.fromTo(
+      el,
+      {
+        y: 200,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        delay,
+        ease: "power4.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, [items, delay]);
 };
