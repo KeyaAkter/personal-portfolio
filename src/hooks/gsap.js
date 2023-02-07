@@ -124,7 +124,7 @@ export const useSectionTitleReveal = (el, delay = 0) => {
   }, [el, delay]);
 };
 
-// Revealing Nav Links
+// Revealing Projects & About
 export const useProjectReveal = (items, delay = 0) => {
   useEffect(() => {
     const el = items.map((item) => item.current);
@@ -146,4 +146,41 @@ export const useProjectReveal = (items, delay = 0) => {
       }
     );
   }, [items, delay]);
+};
+
+// Skill Line Reveal
+export const useSkillLineReveal = (items) => {
+  useEffect(() => {
+    items.forEach((el) => {
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          onEnter() {
+            el.classList.add("reveal");
+          },
+        },
+      });
+    });
+  }, [items]);
+};
+
+// Skill Line Reveal
+export const useSkillTextReveal = (el) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el,
+      {
+        y: 200,
+      },
+      {
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, [el]);
 };
