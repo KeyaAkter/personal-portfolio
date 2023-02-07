@@ -3,8 +3,10 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Socials from "./components/Socials";
+import { useSmoothScroll } from "./hooks/useSmoothScroll";
 
 const App = () => {
+  useSmoothScroll();
   return (
     <div className="app">
       <div className="noise"></div>
