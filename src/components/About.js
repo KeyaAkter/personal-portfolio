@@ -27,11 +27,7 @@ const About = () => {
             obcaecati neque dolor consequuntur vero perspiciatis velit modi
             cupiditate illo exercitationem ad sit? Ipsam exercitationem debitis
             tempore officia deserunt, aspernatur tempora placeat illum inventore
-            aliquam unde atque non enim quidem possimus sit esse similique a
-            magnam consectetur dolor! Corporis, optio aliquam quae ex modi autem
-            exercitationem eos consequuntur sequi numquam quia id cumque
-            dignissimos. Veniam est officia tenetur fuga vel consequatur
-            accusantium libero ipsa.
+
           </p>
 
           <p className="mt-10">
@@ -42,11 +38,7 @@ const About = () => {
             obcaecati neque dolor consequuntur vero perspiciatis velit modi
             cupiditate illo exercitationem ad sit? Ipsam exercitationem debitis
             tempore officia deserunt, aspernatur tempora placeat illum inventore
-            aliquam unde atque non enim quidem possimus sit esse similique a
-            magnam consectetur dolor! Corporis, optio aliquam quae ex modi autem
-            exercitationem eos consequuntur sequi numquam quia id cumque
-            dignissimos. Veniam est officia tenetur fuga vel consequatur
-            accusantium libero ipsa.
+         
           </p>
 
           <a
