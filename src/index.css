@@ -118,6 +118,12 @@ input[type="submit"] {
   opacity: 0.07;
 }
 
+input,textarea,button{
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+/* navbar */
 .link-item {
   position: relative;
 }
@@ -138,6 +144,7 @@ input[type="submit"] {
   width: 100%;
 }
 
+/* hero section */
 .hero {
   position: relative;
 }
@@ -155,6 +162,7 @@ input[type="submit"] {
   z-index: 100;
   font-family: "Cosi Azure", sans-serif;
   font-size: 10rem;
+  text-transform: uppercase;
 }
 
 .shutter-left {
@@ -200,6 +208,7 @@ input[type="submit"] {
   font-family: "Cosi Azure", sans-serif;
   font-size: 10rem;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 /* skills */

@@ -9,10 +9,10 @@ const Bio = () => {
   return (
     <div className="bio mt-20 container mx-auto overflow-hidden">
       <p ref={bioRef}>
-        A talented ReactJS developer with expertise in Tailwind CSS, GSAP,
-        Redux, Redux Toolkit, and Firebase Authentication. Passionate about
-        creating dynamic web experiences and constantly improving skills.
-        Committed to producing high-quality, user-friendly solutions. Ready to
+        I'm a ReactJS developer with expertise in Tailwind CSS, GSAP, Redux,
+        Redux Toolkit, and Firebase Authentication.I am passionate about
+        creating dynamic web experiences and constantly improving skills. I am
+        committed to producing high-quality, user-friendly solutions. Ready to
         bring clients' visions to life.
       </p>
     </div>
