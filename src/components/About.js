@@ -25,23 +25,21 @@ const About = () => {
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right" ref={aboutRightRef}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-            explicabo voluptates. Modi voluptate officia deleniti odio dolores
-            suscipit quod ab, culpa nesciunt qui. Repellat incidunt laboriosam
-            quaerat recusandae, suscipit harum qui animi sequi minus, est fugit
-            obcaecati neque dolor consequuntur vero perspiciatis velit modi
-            cupiditate illo exercitationem ad sit? Ipsam exercitationem debitis
-            tempore officia deserunt, aspernatur tempora placeat illum inventore
+            Hi, I'm a ReactJS developer with a strong focus on Tailwind CSS,
+            GSAP, Redux, Redux Toolkit, and Firebase Authentication. I have a
+            passion for building creative and dynamic web applications and
+            constantly strive to improve my skills and knowledge in web
+            development. I have a keen eye for detail and a commitment to
+            producing high-quality, user-friendly solutions
           </p>
 
           <p className="mt-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-            explicabo voluptates. Modi voluptate officia deleniti odio dolores
-            suscipit quod ab, culpa nesciunt qui. Repellat incidunt laboriosam
-            quaerat recusandae, suscipit harum qui animi sequi minus, est fugit
-            obcaecati neque dolor consequuntur vero perspiciatis velit modi
-            cupiditate illo exercitationem ad sit? Ipsam exercitationem debitis
-            tempore officia deserunt, aspernatur tempora placeat illum inventore
+            As a beginner in the industry, I am eager to gain more hands-on
+            experience and work on challenging projects. I would love the
+            opportunity to bring your vision to life and grow as a developer.
+            Whether you're looking for a simple website or a complex web
+            application, I am confident in my ability to deliver a solution that
+            meets your needs and exceeds your expectations
           </p>
 
           <a

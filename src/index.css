@@ -23,6 +23,7 @@
   background-color: rgba(247, 247, 247, 0.5);
   border-radius: 50px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-light);
 }
@@ -121,7 +122,7 @@ input[type="submit"] {
   position: relative;
 }
 
-.link-item ::after {
+.link-item::after {
   content: "";
   background-color: var(--color-light);
   position: absolute;
