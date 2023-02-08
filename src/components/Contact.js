@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 import { useInputReveal } from "../hooks/gsap";
 import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
+  // form submission
   const formRef = useRef(null);
 
   const sendEmail = (e) => {
@@ -19,10 +21,28 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log("Message sent");
+          toast.success("Your message sent!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         },
         () => {
-          console.log("Message not sent");
+          toast.error("Failed, please try again later!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         }
       );
 
