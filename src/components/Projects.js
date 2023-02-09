@@ -8,7 +8,7 @@ const data = [
     img1: "https://res.cloudinary.com/djnti9d7n/image/upload/v1675859722/personal-portfolio/tech-alpha-1_vae51m.png",
     img2: "https://res.cloudinary.com/djnti9d7n/image/upload/v1675859714/personal-portfolio/tech-alpha-2_wmpd2g.png",
     description:
-      "Shopping cart functionality has been implemented using Redux Toolkit. All the product data has been served via JSON server and fetched using RTK Query. Cart items also saved into the local storage of the client’s browser",
+      "The shopping cart feature has been established using the Redux Toolkit. All the details regarding the products are provided through a JSON server and acquired through Axios. The items in the shopping cart are saved in the local storage of the user's web browser.",
     tools: ["React.js", "Tailwind CSS", "Redux.js", "Redux Toolkit", "Axios"],
     liveLink: "https://project-tech-alpha.netlify.app/",
     frontEndLink: "https://github.com/KeyaAkter/tech-alpha",
@@ -19,8 +19,8 @@ const data = [
     img1: "https://res.cloudinary.com/djnti9d7n/image/upload/v1675859716/personal-portfolio/foodvarse-1_jvddcp.png",
     img2: "https://res.cloudinary.com/djnti9d7n/image/upload/v1675859720/personal-portfolio/foodvarse-2_kwleok.png",
     description:
-      "Foodverse is a recipe web application, where an user can search different kinds of recipe and find the necessary ingredients for the specific recipe item. Also a recipe item can be saved into the local storage of the browser.",
-    tools: ["React.js", "React Router", "Redux Icons", "Tailwind CSS"],
+      "Foodverse is a recipe platform, allowing users to search for a variety of dishes and identify the necessary ingredients for each. Saved recipes can be kept in the local storage of the user's web browser.",
+    tools: ["React.js", "React Router", "Tailwind CSS"],
     liveLink: "https://project-foodvarse.netlify.app/",
     frontEndLink: "https://github.com/KeyaAkter/foodverse",
   },

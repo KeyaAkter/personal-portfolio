@@ -8,7 +8,7 @@ const data = [
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/keya-akter-8770911a8/",
   },
-  { id: 3, title: "LeetCode", url: "https://www.google.com" },
+  { id: 3, title: "LeetCode", url: "https://leetcode.com/KeyaAkter/" },
   {
     id: 4,
     title: "Facebook",

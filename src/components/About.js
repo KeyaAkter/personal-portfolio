@@ -4,8 +4,8 @@ import { useHoverEffect } from "../hooks/useHoverEffect";
 import SectionTitle from "./SectionTitle";
 
 const data = {
-  img1: "https://res.cloudinary.com/djnti9d7n/image/upload/v1675342993/personal-portfolio/about-1_dxvzdu.jpg",
-  img2: "https://res.cloudinary.com/djnti9d7n/image/upload/v1675343009/personal-portfolio/about-2_bwad1l.jpg",
+  img1: "https://res.cloudinary.com/djnti9d7n/image/upload/v1675907588/personal-portfolio/about-3_q3iaxf.jpg",
+  img2: "https://res.cloudinary.com/djnti9d7n/image/upload/v1675907591/personal-portfolio/about-1_tevyuj.jpg",
 };
 
 const About = () => {
@@ -25,12 +25,12 @@ const About = () => {
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right" ref={aboutRightRef}>
           <p>
-            Hi, I'm a ReactJS developer with a strong focus on Tailwind CSS,
-            GSAP, Redux, Redux Toolkit, and Firebase Authentication. I have a
-            passion for building creative and dynamic web applications and
-            constantly strive to improve my skills and knowledge in web
-            development. I have a keen eye for detail and a commitment to
-            producing high-quality, user-friendly solutions
+            Hi, I'm a Front-End developer with a strong focus on React.js,
+            Redux.js, Redux Toolkit, JavaScript, Tailwind CSS, Firebase
+            Authentication, and GSAP. I have a passion for building creative and
+            dynamic web applications and constantly strive to improve my skills
+            and knowledge in web development. I have a keen eye for detail and a
+            commitment to producing high-quality, user-friendly solutions
           </p>
 
           <p className="mt-10">

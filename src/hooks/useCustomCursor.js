@@ -16,11 +16,11 @@ export const useCustomCursor = (innerCursorRef, outerCursorRef) => {
       let links = Array.from(document.querySelectorAll("a"));
 
       links.forEach((link) => {
-        link.addEventListener("mousemove", () => {
+        link.addEventListener("mouseover", () => {
           innerCursorRef.current.classList.add("grow");
         });
 
-        link.addEventListener("mouseover", () => {
+        link.addEventListener("mouseleave", () => {
           innerCursorRef.current.classList.remove("grow");
         });
       });
